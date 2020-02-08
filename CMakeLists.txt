@@ -5,6 +5,7 @@ cmake_minimum_required(VERSION 3.1.0)
 project(motion_detect)
 
 set(Boost_USE_MULTITHREADED TRUE)
+add_definitions(-DBOOST_LOG_DYN_LINK)
 
 # Find librealsense2 installed package
 find_package(realsense2 REQUIRED)
